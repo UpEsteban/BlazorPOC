@@ -1,0 +1,3 @@
+D:\TuringPrueba\TuringTest\ModelShared\obj\Debug\netcoreapp3.0\ModelShared.csprojAssemblyReference.cache
+D:\TuringPrueba\TuringTest\ModelShared\obj\Debug\netcoreapp3.0\ModelShared.AssemblyInfoInputs.cache
+D:\TuringPrueba\TuringTest\ModelShared\obj\Debug\netcoreapp3.0\ModelShared.AssemblyInfo.cs

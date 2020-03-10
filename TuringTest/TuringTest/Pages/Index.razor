@@ -1,5 +1,43 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+@using TuringTest.Services
+@inject TextUtilitiesService _TextUtilitiesService
+@using TuringTest.Models
 
-Welcome to your new app.
+<h1>LUIS Utilities</h1>
+
+<input @bind="_input" placeholder="New Todo Item" />
+<button @onclick="@AddItem">Add</button>
+
+
+<p>Lenguaje detectado: @textUtility.DetectedLanguage</p>
+<p>Traduccion : @textUtility.TranslateLanguage</p>
+<p>Entidades : @Entities</p>
+<p>Palabras Clave: @textUtility.KeyWord</p>
+<p>Indice de sentimiento: @SentimentalRate</p>
+<p>Intencion : @Intents</p>
+
+<h2>@textUtility.TranslateLanguage</h2>
+
+@code {
+    string _input;
+    string Intents;
+    string Entities;
+    string SentimentalRate;
+
+    TextUtility textUtility;
+
+    protected override async Task OnInitializedAsync()
+    {
+        textUtility = new TextUtility();
+    }
+
+    private async Task AddItem()
+    {
+        textUtility = await _TextUtilitiesService.GetAsync(_input);
+        Intents = string.Join(",", textUtility.Intents);
+        Entities = string.Join(",", textUtility.Entities);
+        SentimentalRate = textUtility.SentimentalRate.ToString();
+    }
+}
+

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TuringPrueba\\TuringTest\\TuringTest\\TuringTest.csproj": {}
+    "D:\\TuringPrueba\\TuringTest\\ModelShared\\ModelShared.csproj": {}
   },
   "projects": {
-    "D:\\TuringPrueba\\TuringTest\\TuringTest\\TuringTest.csproj": {
+    "D:\\TuringPrueba\\TuringTest\\ModelShared\\ModelShared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TuringPrueba\\TuringTest\\TuringTest\\TuringTest.csproj",
-        "projectName": "TuringTest",
-        "projectPath": "D:\\TuringPrueba\\TuringTest\\TuringTest\\TuringTest.csproj",
+        "projectUniqueName": "D:\\TuringPrueba\\TuringTest\\ModelShared\\ModelShared.csproj",
+        "projectName": "ModelShared",
+        "projectPath": "D:\\TuringPrueba\\TuringTest\\ModelShared\\ModelShared.csproj",
         "packagesPath": "C:\\Users\\esteb\\.nuget\\packages\\",
-        "outputPath": "D:\\TuringPrueba\\TuringTest\\TuringTest\\obj\\",
+        "outputPath": "D:\\TuringPrueba\\TuringTest\\ModelShared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,16 +40,6 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
-            },
-            "System.Configuration.ConfigurationManager": {
-              "target": "Package",
-              "version": "[4.7.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -61,9 +51,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
